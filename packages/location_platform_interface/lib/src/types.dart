@@ -48,6 +48,11 @@ class LocationData {
       isMock: pigeonData.isMock,
     );
   }
+  
+  Map<String, dynamic> toMap() => {
+    'latitude': latitude,
+    'longitude': longitude
+  }
 
   /// Latitude in degrees
   final double? latitude;
